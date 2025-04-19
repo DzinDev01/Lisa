@@ -1,0 +1,28 @@
+{
+  "name": "exlagmd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Dzin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "github:DzinDeveloper-IND/BaileysV1",
+    "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "file-type": "^16.5.3",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "pino": "^9.4.0", 
+    "node-webpmux": "^3.1.7", 
+    "fluent-ffmpeg": "^2.1.2", 
+    "crypto": "^1.0.1", 
+    "awesome-phonenumber": "^4.4.0", 
+    "https": "^1.0.0", 
+    "util": "^0.12.5"
+  }
+}
