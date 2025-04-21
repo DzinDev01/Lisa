@@ -37,7 +37,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
       } 
       break 
       case "start": {
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Rif, pulang sekolah ntar main yuk kerumah Hendra.' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Rif pulang sekolah ntar main yuk kerumah Hendra.' })
       } 
       break 
       case "tapi": { 
@@ -62,7 +62,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
       break 
       case "kita": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tapi! aku udah ada janji sama Hendra. Aku titip aja ya Rif, tolonglah.' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tapii aku udah ada janji sama Hendra. Aku titip aja ya Rif, tolonglah.' })
       } 
       break 
       default: 
