@@ -37,32 +37,32 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
       } 
       break 
       case "start": {
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Rif pulang sekolah ntar main yuk kerumah Hendra.' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Rif pulang sekolah ntar main yuk kerumah Hendra.' })
       } 
       break 
       case "tapi": { 
         await sleep(10000)
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Ngapain sih ke warnet? Buang buang duit aja' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Ngapain sih ke warnet? Buang buang duit aja' })
       } 
       break 
       case "bukannya": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tugas bahasa indonesia ya?' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Tugas bahasa indonesia ya?' })
       } 
       break 
       case "iya": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Kapan di kumpulinnya?' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Kapan di kumpulinnya?' })
       } 
       break 
       case "besok": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Aku juga ada tugas kaya gitu, boleh nggak sekalian cariin buat aku?' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Aku juga ada tugas kaya gitu, boleh nggak sekalian cariin buat aku?' })
       } 
       break 
       case "kita": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tapii aku udah ada janji sama Hendra. Aku titip aja ya Rif, tolonglah.' })
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: 'Tapii aku udah ada janji sama Hendra. Aku titip aja ya Rif, tolonglah.' })
       } 
       break 
       default: 
