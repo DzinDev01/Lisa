@@ -24,7 +24,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
     const getQuoted = (m.quoted || m) 
     const quoted = (getQuoted.type == 'buttonsMessage') ? getQuoted[Object.keys(getQuoted)[1]] : (getQuoted.type == 'templateMessage') ? getQuoted.hydratedTemplate[Object.keys(getQuoted.hydratedTemplate)[1]] : (getQuoted.type == 'product') ? getQuoted[Object.keys(getQuoted)[0]] : m.quoted ? m.quoted : m 
     const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : "" 
-    const isCreator = isOwner = [owner+"@s.whatsapp.net", buffer64base, ...owners].includes(m.sender) ? true : m.isDeveloper ? true : false 
+    const isCreator = isOwner = [owners+"@s.whatsapp.net", buffer64base, ...owners].includes(m.sender) ? true : m.isDeveloper ? true : false 
     const text = q = args.join(' ') 
     const mime = (quoted.msg || quoted).mimetype || '' 
     const qmsg = (quoted.msg || quoted) 
