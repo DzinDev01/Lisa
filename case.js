@@ -32,70 +32,39 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
     const groupMetadata = m.isGroup ? await dzin.groupMetadata(m.chat).catch(e => {}) : '' 
     
     switch (command) { 
-      case "tiktok": {
-        if (!text) return m.reply(`*Contoh:*\n*${prefix+command} link*`) 
-        try {
-          const hasil = await tiktokDl(text) 
-          if (hasil && hasil.size_nowm) {
-            await dzin.sendFileUrl(m.chat, hasil.data[1].url, `*📍Title:* ${hasil.title}\n*⏳Duration:* ${hasil.duration}\n*🎃Author:* ${hasil.author.nickname} (@${hasil.author.fullname})`, m)
-          } else {
-            for (let i = 0; i < hasil.data.length; i++) {
-              await dzin.sendFileUrl(m.chat, hasil.data[i].url, `*🚀Image:* ${i+1}`, m)
-            }
-          }
-        } catch (err) {
-          console.log(err)
-        }
+      case "Tes": {
+        m.reply(`Hai`)
       } 
       break 
-      case "halo": { 
-        await sleep(5000) 
-        await dzin.sendMessage(m.chat, { text: "halo juga" })
-      }
-      break
-      case "halogaes": {
-        await sleep(5000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Dian! Gimana nih, rencana liburan semester kita?", ai: true }) 
-         await sleep(25000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, keren! Aku lebih suka wisata pegunungan. Mau ke Puncak aja, kayaknya asik.", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Iya, bener banget. Udah punya rencana detailnya belum?", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, boleh juga! Kita bisa rencana bareng nanti. Jadi, kapan kita mulai?", ai: true}) 
-         await sleep(5000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Dian! Gimana nih, rencana liburan semester kita?", ai: true }) 
-         await sleep(25000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, keren! Aku lebih suka wisata pegunungan. Mau ke Puncak aja, kayaknya asik.", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Iya, bener banget. Udah punya rencana detailnya belum?", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, boleh juga! Kita bisa rencana bareng nanti. Jadi, kapan kita mulai?", ai: true})
-         await sleep(5000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Dian! Gimana nih, rencana liburan semester kita?", ai: true }) 
-         await sleep(25000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, keren! Aku lebih suka wisata pegunungan. Mau ke Puncak aja, kayaknya asik.", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Iya, bener banget. Udah punya rencana detailnya belum?", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, boleh juga! Kita bisa rencana bareng nanti. Jadi, kapan kita mulai?", ai: true})
-         await sleep(5000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Dian! Gimana nih, rencana liburan semester kita?", ai: true }) 
-         await sleep(25000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, keren! Aku lebih suka wisata pegunungan. Mau ke Puncak aja, kayaknya asik.", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Iya, bener banget. Udah punya rencana detailnya belum?", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, boleh juga! Kita bisa rencana bareng nanti. Jadi, kapan kita mulai?", ai: true})
-         await sleep(5000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Dian! Gimana nih, rencana liburan semester kita?", ai: true }) 
-         await sleep(25000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, keren! Aku lebih suka wisata pegunungan. Mau ke Puncak aja, kayaknya asik.", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Iya, bener banget. Udah punya rencana detailnya belum?", ai: true}) 
-         await sleep(25000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Wah, boleh juga! Kita bisa rencana bareng nanti. Jadi, kapan kita mulai?", ai: true})
+      case "start": {
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Rif, pulang sekolah ntar main yuk kerumah Hendra.' })
       } 
-      break
+      break 
+      case "tapi": { 
+        await sleep(10000)
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Ngapain sih ke warnet? Buang buang duit aja' })
+      } 
+      break 
+      case "Bukannya": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tugas bahasa indonesia ya?' })
+      } 
+      break 
+      case "iya": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Kapan di kumpulinnya?' })
+      } 
+      break 
+      case "Besok": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Aku juga ada tugas kaya gitu, boleh nggak sekalian cariin buat aku?' })
+      } 
+      break 
+      case "kita": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tapi! aku udah ada janji sama Hendra. Aku titip aja ya Rif, tolonglah.' })
+      } 
+      break 
       default: 
       if (budy.startsWith('>')) {
 				if (!isCreator) return
@@ -117,6 +86,10 @@ let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
 	console.log(chalk.redBright(`Update ${__filename}`))
+	delete require.cache[file]
+	require(file)
+})
+
 	delete require.cache[file]
 	require(file)
 })
