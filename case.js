@@ -32,7 +32,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
     const groupMetadata = m.isGroup ? await dzin.groupMetadata(m.chat).catch(e => {}) : '' 
     
     switch (command) { 
-      case "Tes": {
+      case "tes": {
         m.reply(`Hai`)
       } 
       break 
@@ -45,7 +45,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
         await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Ngapain sih ke warnet? Buang buang duit aja' })
       } 
       break 
-      case "Bukannya": {
+      case "bukannya": {
         await sleep(10000) 
         await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Tugas bahasa indonesia ya?' })
       } 
@@ -55,7 +55,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
         await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Kapan di kumpulinnya?' })
       } 
       break 
-      case "Besok": {
+      case "besok": {
         await sleep(10000) 
         await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Aku juga ada tugas kaya gitu, boleh nggak sekalian cariin buat aku?' })
       } 
