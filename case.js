@@ -89,7 +89,3 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
-
-	delete require.cache[file]
-	require(file)
-})
